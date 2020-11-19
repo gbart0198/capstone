@@ -70,16 +70,27 @@ exports.signup = async (req, res, next) => {
 exports.update = async (req, res, next) => {
     try {
         validationHandler(req);
+        emailChange = false;
 
-        let user = await User.findById(req.params.id);
-        if (req.body.email) {
-            user.email = req.body.email;
+        let existingUser = await User.findOne({email: req.params.id});
+        if (!existingUser) {
+            existingUser = await User.findOne({username: req.params.id});
+            if (!existingUser) {
+                const error = new Error("Username already in use");
+                error.statusCode = 403;
+                throw error;
+            }
+            emailChange = true;
+        }
+
+        if (req.body.email&&emailChange) {
+            existingUser.email = req.body.email;
         }
         if (req.body.password) {
-            user.password = await user.encryptPassword(req.body.password);
+            existingUser.password = await existingUser.encryptPassword(req.body.password);
         }
          
-        user = await user.save();
+        existingUser = await existingUser.save();
         return res.send({message: "user updated successfully"})
 
     } catch (err) {
@@ -89,13 +100,18 @@ exports.update = async (req, res, next) => {
 
 exports.delete = async (req, res, next) => {
     try {
-        let user = await User.findById(req.params.id);
-        if (!user) {
-            const error = new Error("User does not exist");
-            error.statusCode = 400;
-            throw error;
+        console.log(req.params.id);
+        let existingUser = await User.findOne({email: req.params.id});
+        if (!existingUser) {
+            existingUser = await User.findOne({username: req.params.id});
+            if (!existingUser) {
+                const error = new Error("Username already in use");
+                error.statusCode = 403;
+                throw error;
+            }
         }
-        await user.delete();
+        
+        await existingUser.delete();
         res.send({message: "User successfully deleted"});
     } catch (err) {
         next(err);

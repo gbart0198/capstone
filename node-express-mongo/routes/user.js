@@ -6,11 +6,11 @@ const adminPassportJWT = require("../middlewares/adminPassportJWT")();
 router.post("/login", userController.login);
 router.post("/signup", userController.signup);
 router.patch("/:id",
-adminPassportJWT.authenticate(),
-userController.update);
+    adminPassportJWT.authenticate(),
+    userController.update);
 router.delete("/:id",
-adminPassportJWT.authenticate(),
-userController.delete);
+    adminPassportJWT.authenticate(),
+    userController.delete);
 
 
 module.exports = router;
