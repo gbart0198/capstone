@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "5fb5e9382c74ee50e83ea4c4"
+  },
+  "createdAt": {
+    "$date": "2020-11-19T03:17:59.996Z"
+  },
+  "name": "Xbox Series X",
+  "description": "Sleek Xbox Series X that looks and runs like a mini computer",
+  "brand": "Microsoft",
+  "price": "500",
+  "image": "a143de88edb092f0f539413181f5dc41",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5ed742c74ee50e83ea4c5"
+  },
+  "createdAt": {
+    "$date": "2020-11-19T03:17:59.996Z"
+  },
+  "name": "Xbox 360",
+  "description": "Old Xbox 360 that can barely run Netflix",
+  "brand": "Microsoft",
+  "price": "100",
+  "image": "008b451559de3e995b82ce02b1344fb5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5ee0d2c74ee50e83ea4c6"
+  },
+  "createdAt": {
+    "$date": "2020-11-19T03:17:59.996Z"
+  },
+  "name": "Corsair K70 RGB",
+  "description": "All new mechanical gaming keyboard with blue switches",
+  "brand": "Corsair",
+  "price": "120",
+  "image": "c54b2f7dcb53df4eb3410bae2af28ce5",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5f20c2c74ee50e83ea4ca"
+  },
+  "createdAt": {
+    "$date": "2020-11-19T03:17:59.996Z"
+  },
+  "name": "B450 Aorus Elite Motherboard",
+  "description": "Computationally advanced motherboard capable of using the most up-to-date graphics cards and CPUs.",
+  "brand": "Aorus",
+  "price": "150",
+  "image": "2da9601afc5aa24208d27f35d171841b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5f21d2c74ee50e83ea4cb"
+  },
+  "createdAt": {
+    "$date": "2020-11-19T03:17:59.996Z"
+  },
+  "name": "iPhone 12",
+  "description": "The all new cutting-edge iPhone 12's are lightning-fast, silky-sleek, and ready for your consumption.",
+  "brand": "Apple",
+  "price": "1200",
+  "image": "65f290f3685a81df967b8281b96b1cd6",
+  "__v": 0
+}]

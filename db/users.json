@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5fb596e60d4d5b21f0f91210"
+  },
+  "createdAt": {
+    "$date": "2020-11-18T21:49:23.579Z"
+  },
+  "email": "gbart0198@gmail.com",
+  "username": "gbart0198",
+  "password": "$2a$05$7NFoW55d3pKTrf55Iv3BuOYmYkALy.O8qCgVXhGWpKKGd0zrDGTZC",
+  "__v": 0,
+  "admin": false
+},{
+  "_id": {
+    "$oid": "5fb5a4903750d349fc5ef98c"
+  },
+  "admin": true,
+  "createdAt": {
+    "$date": "2020-11-18T22:46:41.362Z"
+  },
+  "email": "adminroot@gmail.com",
+  "username": "admin",
+  "password": "$2a$05$THbthnavzDHHkTavcEAKHOC1k7prnpEPG1vevaAHj4nBw5xx.ht2C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5c16a34561811b4066cf5"
+  },
+  "admin": false,
+  "createdAt": {
+    "$date": "2020-11-19T00:19:53.402Z"
+  },
+  "email": "test@gmail.com",
+  "username": "test",
+  "password": "$2a$05$lz0X6wP0CUy5ALVAexOI2OijUTwyjqdBtX41rCJDLM314iyOKN.WK",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb5dca6b4e95d05b86f48d3"
+  },
+  "admin": false,
+  "createdAt": {
+    "$date": "2020-11-19T02:40:43.530Z"
+  },
+  "email": "test1@gmail.com",
+  "username": "test1",
+  "password": "$2a$05$hZpFONpwKThxTLfr9Ym1uOUf9CpSFVEwIYhzqloZl943HsN4aq0Om",
+  "__v": 0
+}]
